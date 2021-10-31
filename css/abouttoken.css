@@ -323,8 +323,22 @@ text-decoration-thickness: 3px;
 /* wfair section  */
 
 /* Token metrics */
+
+.metrics-shape-1
+{
+  position: absolute;
+  top:40% ;
+  left: 200px;
+}
+.metrics-shape-2
+{
+  position: absolute;
+  top:28% ;
+  right: 200px;
+}
 .metrics-section
 {
+  position: relative;
 margin-top: 100px;
 }
 .metrics-section .token-metrics

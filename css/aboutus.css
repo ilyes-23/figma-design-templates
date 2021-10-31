@@ -6,11 +6,63 @@
     --font-family : 'Poppins', sans-serif;
   }
 
+.circle-shape
+{
+  position: absolute;
+  right: 23%;
+  top: 8%;
+}
+.circle-shape1
+{
+  position: absolute;
+  right: 35%;
+  top: 10%;
+}
+
 /* aboutus-section */
+.aboutus-shape
+{
+  position: absolute;
+  left: 40%;
+  z-index: -1;
+  opacity: .5;
+}
 .aboutus-section
 {
     width: 100%;
     margin-top: 100px;
+}
+.aboutus-section::before
+{
+  content: '';
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  border: 1px dashed;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  border-color: #D2DBE5;
+}
+.aboutus-section::after
+{
+  content: '';
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 200px;
+  left: 45%;
+  border: 1px dashed;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+  border-color: #D2DBE5;
 }
 .aboutus-section h2
 {
@@ -58,13 +110,39 @@ margin-top: 80px;
 /* aboutus-section */
 
 /* Roadmaps section  */
+
+.token-shape-1
+{
+position: absolute;
+right: 120px;
+top: -40px;
+}
+.token-shape-2
+{
+  position: absolute;
+  right: 220px;
+  top: 80px;
+}
+.token-shape-3
+{
+  position: absolute;
+  left: 220px;
+  top: 6px;
+}
+.token-shape-4
+{
+  position: absolute;
+  left:78px;
+  top: 80px;
+}
 .token-section
 {
+  position: relative;
 margin-top:100px ;
 width: 100%;
 position: relative;
 margin-bottom: 50px;
-min-height: 100vh;
+/* min-height: 100vh; */
 }
 .token-section .token-title
 {
@@ -290,9 +368,35 @@ font-size: 10px;
 
 
 /* our team section */
+.team-shape-1
+{
+  position: absolute;
+  top: 206px;
+  left: 50%;
+}
+.team-shape-2
+{
+  position: absolute;
+  top: 236px;
+  right: 10%;
+}
+.team-shape-3
+{
+  position: absolute;
+  top: 40%;
+  left: 200px;
+}
+.team-shape-4
+{
+  position: absolute;
+  top: 60%;
+  left: 120px;
+
+}
 .our-team
 {
     margin-top: 100px;
+    position: relative;
 }
 .our-team .our-team-title
 {
@@ -322,6 +426,7 @@ letter-spacing: 0em;
 }
 .swiper{
   margin-left: -400px !important;
+  margin-top: 150px;
 }
 .swipe-section
 {
@@ -411,7 +516,7 @@ padding-bottom: 5px;
   {
     width: calc(100% / 3);
     margin: 190px !important;
-    margin-left: 0px !important;
+    margin-left: 10% !important;
 
     /* display: flex; */
   }
@@ -569,9 +674,29 @@ padding-bottom: 5px;
 
 @media (max-width : 575px)
 {
+  .aboutus-section::before {
+    content: '';
+    left: 10%;
+    width: 300px;
+    height: 300px;
+}
+.aboutus-section::after {
+  content: '';
+  left: 50%;
+  transform: translate(-50%);
+  width: 100px;
+  height: 100px;
+}
+.aboutus-shape {
+  position: absolute;
+  left: 5%;
+  z-index: -1;
+  opacity: .5;
+}
   .our-team .container
   {
     max-width: 100% !important;
+    margin-top: 600Px;
   }
   .aboutus-section p 
   {
@@ -585,7 +710,7 @@ padding-bottom: 5px;
 /* Roadmaps section  */
 .token-section
 {
-  min-height: 240vh;
+  min-height: 148vh;
 }
 .token-section ol
 {
